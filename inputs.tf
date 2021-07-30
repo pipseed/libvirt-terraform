@@ -17,6 +17,7 @@ variable "mac" {}
 variable "sitecode" {}
 variable "repo" {}
 variable "ubuntu_release" {}
+variable "source_dir" {}
 
 variable "ssh_user" {}
 variable "ssh_passwd" {}

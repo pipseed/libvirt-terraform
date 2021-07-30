@@ -16,7 +16,7 @@ provider "libvirt" {
 resource "libvirt_volume" "os_image" {
   name = "${var.hostname}-os_image"
   pool = "default"
-  source = "/home/seeda/Automation/Downloads/${var.ubuntu_release}"
+  source = "${var.source_dir/${var.ubuntu_release}"
   format = "qcow2"
 }
 
