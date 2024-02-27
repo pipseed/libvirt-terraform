@@ -4,7 +4,7 @@ variable "hostname" {}
 variable "domain" {} 
 variable "ip_type" {} # dhcp is other valid type 
 variable "memoryMB" {} 
-variable "cpu" {} 
+variable "vcpu" {} 
 
 ## Disk sizes
 variable "disk-size" {}

@@ -63,7 +63,10 @@ resource "libvirt_domain" "domain-ubuntu" {
   # domain name in libvirt, not hostname
   name = var.hostname
   memory = var.memoryMB
-  vcpu = var.cpu
+  vcpu = var.vcpu
+  cpu {
+    mode = "host-passthrough"
+  }
 
   disk {
        volume_id = libvirt_volume.disk_ubuntu_resized.id
