@@ -9,7 +9,7 @@ terraform {
 
 # instance the provider
 provider "libvirt" {
-  uri = "qemu:///session"
+  uri = "qemu:///system"
 }
 
 resource "libvirt_volume" "os_image" {
