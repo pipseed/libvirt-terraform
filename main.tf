@@ -63,7 +63,7 @@ resource "libvirt_domain" "domain-ubuntu" {
   name = var.hostname
   memory = var.memoryMB
   vcpu = var.vcpu
-  cpu = {
+  cpu {
       mode = "host-passthrough"
   }
 
